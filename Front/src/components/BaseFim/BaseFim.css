@@ -1,0 +1,91 @@
+.main-container-basefim {
+  margin-top: 4rem;
+}
+
+.main-container-basefim table {
+  margin: auto;
+  margin-top: 30px;
+  width: 85%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.main-container-basefim table th,
+.main-container-basefim table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  height: 40px;
+}
+
+.main-container-basefim table th {
+  background-color: #444444;
+  color: white;
+}
+
+.dates-reset-container-fim {
+  background-color: rgb(213, 213, 249);
+  /* background-color: #e2d3f6; */
+  height: calc(100vh - 4rem);
+  width: 20rem;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+.dates-reset {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.dates-reset::-webkit-scrollbar {
+  width: 5px; /* Ancho del scrollbar */
+  background-color: transparent; /* Color de fondo del scrollbar */
+}
+
+.dates-reset::-webkit-scrollbar-thumb {
+  background-color: #9fa0fd; /* Color de la barra de desplazamiento */
+  border-radius: 5px; /* Radio de borde de la barra de desplazamiento */
+}
+
+.fim-dates-reset-container {
+  margin-top: 20px;
+}
+
+.dates-container {
+  height: 80%;
+  overflow-y: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-reset-fim {
+  width: 90%;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+}
+
+.table-reset-fim th,
+.table-reset-fim td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  border-top: none;
+  border-bottom: none;
+  font-size: 0.6rem;
+  text-align: center;
+  /* word-break: break-all; */
+}
+
+.counter-reset-td {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}

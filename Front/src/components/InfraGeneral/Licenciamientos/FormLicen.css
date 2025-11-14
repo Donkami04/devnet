@@ -1,0 +1,53 @@
+/* Contenedor principal del formulario */
+.form-container-licen {
+  background: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* Grupo de cada campo */
+.form-group-licen {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+
+/* Etiqueta de los inputs */
+.form-group-licen label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.form-group-licen input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Pie del formulario */
+.form-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón de envío */
+.form-button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: #0056b3;
+}

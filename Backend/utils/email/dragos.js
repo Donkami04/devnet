@@ -1,0 +1,88 @@
+const { getApiData } = require("./getData");
+const indicatorService = require("../../controllers/metricas");
+
+const fetchDataDragos = async () => {
+  try {
+
+    const today = new Date().toISOString().split("T")[0];
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+
+    const data = await getApiData("dragos");
+
+    // Filtrar elementos por estado
+    const upElem = data.data.filter((elem) => elem.status.toLowerCase().includes("up"));
+    const downElem = data.data.filter((elem) => elem.status.toLowerCase().includes("down"));
+
+    // Guardar indicadores de hoy
+    await indicatorService.saveIndicators(today, "dragos", {
+      up: upElem.length,
+      down: downElem.length,
+    });
+
+    // Obtener indicadores de hoy y ayer
+    const todayIndicators = await indicatorService.getIndicators(today, "dragos");
+    const yesterdayIndicators = await indicatorService.getIndicators(yesterday, "dragos");
+
+    // Comparar métricas
+    const comparison = indicatorService.compareMetrics(todayIndicators, yesterdayIndicators);
+
+    const upToday = upElem.length;
+    const downToday = downElem.length;
+
+    let upDiff = "";
+    let downDiff = "";
+
+    if (comparison.up) {
+      upDiff =
+        comparison.up.diff > 0
+          ? `<span style="color: green;">(+${comparison.up.diff})</span>`
+          : comparison.up.diff < 0
+          ? `<span style="color: red;">(${comparison.up.diff})</span>`
+          : "";
+    }
+
+    if (comparison.down) {
+      downDiff =
+        comparison.down.diff > 0
+          ? `<span style="color: red;">(+${comparison.down.diff})</span>`
+          : comparison.down.diff < 0
+          ? `<span style="color: green;">(${comparison.down.diff})</span>`
+          : "";
+    }
+
+    const dragos = `
+      <div style="margin-top: 20px; font-family: Arial, sans-serif; padding: 16px;">
+        <h2 style="text-align: center; color: #111; font-size: 24px; margin: 0;">Dragos</h2>
+        <div style="text-align: center; overflow-x: auto; margin-top: 20px;">
+          <table style="width: 100%; max-width: 600px; display: inline-table; border-collapse: collapse; font-size: 10px; color: #333; table-layout: fixed;">
+            <thead>
+              <tr style="background-color: #f5f5f5;">
+                <th style="width: 50%; border: 1px solid #ddd; padding: 3px; text-align: center; background-color: rgb(3, 186, 31); color: white; font-weight: bold">Up</th>
+                <th style="width: 50%; border: 1px solid #ddd; padding: 3px; text-align: center; background-color: red; color: white; font-weight: bold">Down</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center; border: 1px solid #ddd; padding: 4px;">${upToday} ${upDiff}</td>
+                <td style="text-align: center; border: 1px solid #ddd; padding: 4px;">${downToday} ${downDiff}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+
+    return dragos;
+  } catch (error) {
+    console.error("Error fetching Dragos data:", error);
+        return {
+      error: true,
+      message: error.stack || error.message
+    };
+  }
+};
+
+module.exports = {
+  fetchDataDragos,
+};
+

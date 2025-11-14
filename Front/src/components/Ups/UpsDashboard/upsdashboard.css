@@ -1,0 +1,68 @@
+.ups-section{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 3rem; */
+}
+
+.main-section {
+  width: 25rem;
+  height: 10rem;
+  padding-top: 20px;
+  width: 30rem;
+  height: 10rem;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 0.6rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ups-table td{
+  font-size: 1rem;
+}
+
+.ups-table {
+  position: relative;
+  top: 10px;
+}
+
+.light-indicator {
+  border: black solid 1px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-bottom: 5px ;
+  margin-left: 0;
+  position: absolute;
+}
+
+.green-light {
+  background-color: rgb(148, 247, 0);
+}
+
+.yellow-light {
+  background-color: yellow;
+}
+
+.red-light {
+  background-color: red;
+}
+
+.warning-light {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px ;
+  margin-left: -2px;
+  position: absolute;
+  bottom: 3px;
+}
+
+@media (max-width: 530px) {
+  .main-section {
+    width: 90%;
+  }
+
+}

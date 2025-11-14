@@ -1,0 +1,121 @@
+/* Estilos para el fondo del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenedor del modal */
+.modal-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  min-width: 400px;
+  /* max-width: 500px; */
+  padding-bottom: 10px;
+}
+
+/* Encabezado del modal */
+.modal-header {
+  display: flex;
+  border-radius: 8px 8px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #374151;
+  color: white;
+}
+
+/* Botón de cierre */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Contenido del modal */
+.modal-content {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Pie del modal con los botones */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 80px;
+}
+
+.modal-button:hover {
+  opacity: 0.8;
+}
+
+.modal-button-primary {
+  background: #007bff;
+  color: white;
+}
+
+.modal-button-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.error-message-lice {
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Ajustes para que el contenido del modal (tabla) no se desborde */
+.modal-content {
+  
+  max-height: calc(100% - 80px); /* deja espacio para header/footer */
+  padding: 0 10px;
+  background: white; /* evita que se mezcle el color con la tabla */
+  border-radius: 0 0 8px 8px;
+}
+
+/* Corrige el color del fondo detrás de la tabla */
+.table-container {
+  background-color: transparent; /* evita fondo azul o gris */
+  max-height: 220px; /* controla el alto dentro del modal */
+  overflow-y: auto;
+}
+
+/* Si usas borde o sombreado, ajusta su visibilidad */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+}
+
+.table-container thead {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+}

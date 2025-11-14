@@ -1,0 +1,78 @@
+/* Estilo para el contenedor principal */
+.form-container {
+  margin: auto;
+  max-width: 400px;
+  margin-top: 3rem;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #7e777727;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(122, 120, 227, 0.555);
+}
+
+/* Estilo para los títulos */
+.form-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para etiquetas de formulario */
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilo para campos de entrada */
+.form-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 90%;
+}
+
+.form-select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Estilo para el botón de enviar */
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+
+/* Estilo para el mensaje de respuesta */
+.form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.form-message-red {
+  margin-top: 15px;
+  font-weight: bold;
+  color: red;
+}
+
+.search-button {
+  margin-bottom: 1.5rem;
+}
+
+.form-divider {
+  margin-bottom: 1rem;
+}

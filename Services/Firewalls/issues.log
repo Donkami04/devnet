@@ -1,0 +1,82 @@
+2025-10-15 23:16:16,388 - ERROR - TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: fortinet 10.224.127.184:2221
+
+
+2025-10-15 23:16:16,392 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/paramiko/client.py", line 384, in connect
+    sock.connect(addr)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/get_fw_data.py", line 204, in diagnose_fw
+    net_connect = ConnectHandler(**network_device_list)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: fortinet 10.224.127.184:2221
+
+
+
+2025-10-15 23:16:16,392 - ERROR - Error en el archivo VDOM funcion vdom_connection
+2025-10-15 23:16:30,381 - ERROR - 
+A paramiko SSHException occurred during connection creation:
+
+No authentication methods available
+
+
+2025-10-15 23:16:30,382 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/paramiko/client.py", line 483, in connect
+    self._auth(
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/paramiko/client.py", line 815, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/get_fw_data.py", line 204, in diagnose_fw
+    net_connect = ConnectHandler(**network_device_list)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/donkami/devnet-candelaria/Services/Firewalls/venv/lib/python3.12/site-packages/netmiko/base_connection.py", line 1099, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+No authentication methods available
+
+
+
+2025-10-15 23:16:30,382 - ERROR - Error en el archivo VDOM funcion vdom_connection

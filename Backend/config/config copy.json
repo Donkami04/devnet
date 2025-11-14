@@ -1,0 +1,30 @@
+{
+  "local": {
+    "dialect": "mysql",
+    "host": "127.0.0.1",
+    "username": "candelaria",
+    "password": "candelaria",
+    "database": "dcs"
+  },
+  "development": {
+    "dialect": "mysql",
+    "host": "10.224.116.78",
+    "username": "devnet",
+    "password": "devnet.1",
+    "database": "devnet"
+  },
+  "production": {
+    "dialect": "mysql",
+    "host": "db",
+    "username": "candelaria",
+    "password": "candelaria",
+    "database": "dcs"
+  },
+  "historic": {
+    "dialect": "mysql",
+    "host": "10.230.116.17",
+    "username": "devnet",
+    "password": "devnet.3",
+    "database": "historic-devnet"
+  }
+}

@@ -1,0 +1,50 @@
+.main-table-sensors-prtggroups-container {
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: #4444446a;
+    top: calc(4rem);
+    display: grid;
+    place-content: center;
+}
+
+.table-sensors-prtggroups-container {
+    width: 40rem;
+    max-height: 30rem;
+    /* background-color: white; */
+    /* text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 20px; */
+    padding: 5px;
+    overflow-y: auto;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.table-sensors-prtggroups {
+    width: 100%;
+    /* table-layout: fixed; */
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.table-sensors-prtggroups td {
+    font-size: 0.8rem;
+
+}
+
+.table-sensors-prtggroups th {
+    background-color: #444444;
+    color: white;
+}
+
+.table-sensors-prtggroups th, .table-sensors-prtggroups td {
+    border: solid 1px black;
+    padding: 3px;
+}
+

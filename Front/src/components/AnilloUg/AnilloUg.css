@@ -1,0 +1,264 @@
+.anilloug-image-container {
+  width: 1050px;
+  margin: auto;
+}
+
+.anilloug-image {
+  width: 100%;
+  height: 100%;
+
+}
+
+.status-light-anilloug {
+  border: black solid 1px;
+  width: 31px;
+  height: 10px;
+  position: absolute;
+  font-size: 0.55rem;
+  margin-top: 57px;
+
+}
+
+.main-lights-anilloug-container {
+  position: absolute;
+  width: 850px;
+  z-index: 999999;
+  top: 4rem;
+}
+
+/* 10.224.127.180 */
+.id18903 {
+  height: 9px;
+  top: 94px;
+  left: 506px;
+}
+.id18904 {
+  height: 9px;
+  top: 109px;
+  left: 506px;
+}
+.id18902 {
+  height: 9px;
+  top: 147px;
+  left: 578px;
+}
+
+/* 172.31.250.26 */
+.id15565 {
+  height: 9px;
+  top: 402px;
+  left: 351px;
+}
+.id15566 {
+  height: 9px;
+  top: 455px;
+  left: 315px;
+}
+.id15564 {
+  height: 9px;
+  top: 367px;
+  left: 280px;
+  width: 35px;
+}
+
+/* 172.31.1.246 */
+.id18883 {
+  left: 252px;
+  top: 577px;
+  transform: rotate(45deg);
+  font-size: 0.5rem;
+  width: 26px;
+}
+.id18881 {
+  left: 244px;
+  top: 590px;
+  transform: rotate(33deg);
+  font-size: 0.5rem;
+  width: 26px;
+}
+.id18889 {
+  left: 237px;
+  top: 622px;
+  transform: rotate(2deg);
+  font-size: 0.5rem;
+  width: 26px;
+}
+.id18884 {
+  left: 238px;
+  top: 607px;
+  transform: rotate(18deg);
+  font-size: 0.5rem;
+  width: 26px;
+}
+.id18885 {
+  left: 230px;
+  top: 639px;
+  transform: rotate(-13deg);
+  font-size: 0.5rem;
+  width: 26px;
+}
+.id18887 {
+  left: 240px;
+  top: 652px;
+  transform: rotate(-27deg);
+  font-size: 0.5rem;
+}
+.id18886 {
+  left: 246px;
+  top: 668px;
+  transform: rotate(-40deg);
+  width: 26px;
+  font-size: 0.5rem;
+}
+.id18737 {
+  left: 354px;
+  top: 653px;
+  width: 26px;
+  font-size: 0.5rem;
+}
+.id18890 {
+  left: 318px;
+  top: 588px;
+  width: 26px;
+  font-size: 0.5rem;
+}
+.id18888 {
+  left: 311px;
+  top: 675px;
+  font-size: 0.5rem;
+}
+
+/* 172.31.1.244 */
+.id15462 {
+  left: 641px;
+  top: 714px;
+  font-size: 0.5rem;
+}
+.id15463 {
+  left: 719px;
+  top: 643px;
+  font-size: 0.5rem;
+}
+.id18895 {
+  left: 759px;
+  top: 679px;
+  font-size: 0.5rem;
+  transform: rotate(-6deg);
+}
+.id18896 {
+  left: 759px;
+  top: 698px;
+  font-size: 0.5rem;
+  transform: rotate(14deg);
+}
+.id18897 {
+  left: 757px;
+  top: 657px;
+  font-size: 0.5rem;
+  transform: rotate(-25deg);
+}
+.id18899 {
+  top: 739px;
+  left: 752px;
+  font-size: 0.5rem;
+  transform: rotate(48deg);
+}
+.id18898 {
+  top: 715px;
+  left: 756px;
+  font-size: 0.5rem;
+  transform: rotate(28deg);
+}
+
+/* 172.31.250.30 */
+.id15488 {
+  left: 706px;
+  top: 433px;
+  width: 35px;
+}
+.id15572 {
+  left: 643px;
+  top: 468px;
+}
+.id15582 {
+  left: 720px;
+  top: 525px;
+}
+
+/* 110.224.127.147 */
+.id17481 {
+  left: 578px;
+  top: 252px;
+}
+.id17478 {
+  left: 510px;
+  top: 288px;
+  width: 25px;
+}
+.id17480 {
+  left: 606px;
+  top: 338px;
+}
+
+/* 110.224.127.148 */
+.id17508 {
+  left: 474px;
+  top: 288px;
+  width: 25px;
+}
+.id17493 {
+  left: 405px;
+  top: 252px;
+  width: 25px;
+}
+.id17510 {
+  left: 403px;
+  top: 344px;
+  width: 25px;
+}
+
+/* 172.31.1.245 */
+.id15570 {
+  left: 550px;
+  top: 800px;
+}
+.id15569 {
+  left: 440px;
+  top: 800px;
+}
+.id18891 {
+  left: 511px;
+  top: 873px;
+  transform: rotate(80deg);
+}
+.id18893 {
+  left: 549px;
+  top: 860px;
+  transform: rotate(44deg);
+}
+.id18892 {
+  left: 476px;
+  top: 874px;
+  transform: rotate(-72deg);
+}
+.id18894 {
+  left: 448px;
+  top: 865px;
+  transform: rotate(-49deg);
+}
+
+/* 10.224.127.181 */
+.id18907 {
+  left: 399px;
+  top: 212px;
+}
+.id18908 {
+  left: 471px;
+  top: 158px;
+  height: 9px;
+}
+.id18909 {
+  left: 471px;
+  top: 173px;
+  height: 9px;
+}

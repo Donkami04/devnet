@@ -1,0 +1,130 @@
+2024-08-26 16:26:24,870 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 291, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'donkami'@'172.18.0.1' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/db_connections.py", line 21, in devnet_connection
+    db_connector = mysql.connector.connect(
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 120, in __init__
+    self.connect(**kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1181, in connect
+    self._open_connection()
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 296, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'donkami'@'172.18.0.1' (using password: NO)
+
+2024-08-26 16:26:24,870 - ERROR - Error en la función `devnet_connection` en el archivo `db_connections`
+2024-08-26 16:26:24,870 - ERROR - 1045 (28000): Access denied for user 'donkami'@'172.18.0.1' (using password: NO)
+2024-08-26 16:26:24,870 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/main.py", line 20, in ups
+    raise ValueError(
+ValueError: No se pudo establecer la conexión con la base de datos: el conector es None.
+
+2024-08-26 16:29:00,396 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 291, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/db_connections.py", line 21, in devnet_connection
+    db_connector = mysql.connector.connect(
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 120, in __init__
+    self.connect(**kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1181, in connect
+    self._open_connection()
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 296, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+
+2024-08-26 16:29:00,396 - ERROR - Error en la función `devnet_connection` en el archivo `db_connections`
+2024-08-26 16:29:00,396 - ERROR - 1045 (28000): Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+2024-08-26 16:29:00,396 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/main.py", line 20, in ups
+    raise ValueError(
+ValueError: No se pudo establecer la conexión con la base de datos: el conector es None.
+
+2024-08-26 16:29:40,448 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 291, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/db_connections.py", line 21, in devnet_connection
+    db_connector = mysql.connector.connect(
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 120, in __init__
+    self.connect(**kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1181, in connect
+    self._open_connection()
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 296, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+
+2024-08-26 16:29:40,448 - ERROR - Error en la función `devnet_connection` en el archivo `db_connections`
+2024-08-26 16:29:40,448 - ERROR - 1045 (28000): Access denied for user 'camilo'@'172.18.0.1' (using password: YES)
+2024-08-26 16:29:40,449 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/main.py", line 20, in ups
+    raise ValueError(
+ValueError: No se pudo establecer la conexión con la base de datos: el conector es None.
+
+2024-08-26 17:06:31,556 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 291, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'candelaria'@'%' to database 'devices'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/db_connections.py", line 21, in devnet_connection
+    db_connector = mysql.connector.connect(
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 120, in __init__
+    self.connect(**kwargs)
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1181, in connect
+    self._open_connection()
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 296, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'candelaria'@'%' to database 'devices'
+
+2024-08-26 17:06:31,557 - ERROR - Error en la función `devnet_connection` en el archivo `db_connections`
+2024-08-26 17:06:31,557 - ERROR - 1044 (42000): Access denied for user 'candelaria'@'%' to database 'devices'
+2024-08-26 17:06:31,557 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/main.py", line 20, in ups
+    raise ValueError(
+ValueError: No se pudo establecer la conexión con la base de datos: el conector es None.
+
+2024-08-26 17:23:21,140 - ERROR - Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/donkami/Sona/database_testing/main.py", line 83, in ups
+    prtg_response_id = requests.get(url_prtg_id, verify=False).json()
+  File "/home/donkami/Sona/database_testing/venv/lib/python3.10/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2024-08-26 17:23:21,141 - ERROR - Error en la funcion `ups` en el archivo `main` con la ups con IP 10.224.1.8
+2024-08-26 17:23:21,141 - ERROR - Expecting value: line 1 column 1 (char 0)

@@ -1,0 +1,48 @@
+.ups-card-img{
+  width: 5rem;
+  height: 8rem;
+}
+
+.ups-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ups-card{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: left;
+  border: black solid 1px;
+  padding: 5px;
+}
+
+.status-light {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.green {
+  background-color: rgb(148, 247, 0);
+}
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}

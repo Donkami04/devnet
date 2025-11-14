@@ -1,0 +1,92 @@
+.dataCoreContainer {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+}
+
+.close-button-datacore {
+    position: relative;
+    background-color: blue;
+    z-index: 9999;
+    width: 500px;
+}
+
+.close-button-datacore p {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    color: red;
+}
+
+.close-button-datacore p:hover {
+    color: white;
+}
+
+.row-ig-table {
+    cursor: pointer;
+}
+
+.table-topology-ig-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    max-height: cacl(99vh - 4rem - 110px);
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.table-topology-ig-container table {
+    border-collapse: collapse;
+}
+
+.table-topology-ig-container table td,
+.table-topology-ig-container table th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.table-topology-ig-container table th {
+  font-size: 0.8rem;
+  color: white;
+  background-color: #444444;
+}
+
+.table-topology-ig-container table td {
+  font-size: 0.7rem;  
+}
+
+.table-topology-ig-container table td a {
+    color: black;
+}
+
+.table-topology-ig-container table tr:hover {
+    background-color: rgba(199, 148, 246, 0.206);
+}
+
+.search-container-ig {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container-ig label {
+    font-weight: 100;
+}
+
+.search-container-ig input {
+    width: 200px;
+}
+
+.table-names-sw-ig-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    border-bottom: solid 1px black;
+}
+
+.table-names-sw-ig {
+    width: 100%;
+}

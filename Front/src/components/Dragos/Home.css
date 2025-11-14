@@ -1,0 +1,23 @@
+.table-dragos-home {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 4px;
+  font-size: 0.8rem;
+  table-layout: fixed;
+}
+
+.table-dragos-home th {
+  border: 1px solid black;
+  padding: 6px;
+}
+.table-dragos-home td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.table-dragos-home th {
+  font-size: 1rem;
+}

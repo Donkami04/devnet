@@ -1,0 +1,53 @@
+.table-details-inf-gen-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.div-details-inf-gen{
+    margin-top: 10px;
+    width: 30%;
+    overflow-y: auto;
+    max-height: calc(100vh - 4rem - 55px - 48px - 30px);
+}
+
+
+.table-details-inf-gen {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-details-inf-gen td, .table-details-inf-gen th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.table-details-inf-gen td {
+    font-size: 0.8rem;
+}
+
+.table-details-inf-gen th {
+    font-size: 1rem;
+    background-color: #444444;
+    color: white;
+}
+
+.search-container-details-ig {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+
+.search-container-details-ig input {
+    width: 300px;
+    height: 1.6rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+  

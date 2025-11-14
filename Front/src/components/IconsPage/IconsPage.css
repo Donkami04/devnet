@@ -1,0 +1,10 @@
+.cisco-prtg-icons {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    /* align-items: center; */
+    /* position: fixed; */
+    width: 5rem;
+    /* height: 1.2rem; */
+    /* bottom: 0; */
+  }

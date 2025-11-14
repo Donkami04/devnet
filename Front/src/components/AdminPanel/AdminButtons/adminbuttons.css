@@ -1,0 +1,35 @@
+.admin-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.green-button {
+  background-color: #2ec733;
+  color: white;
+}
+
+.blue-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.red-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.buttons-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+
+}

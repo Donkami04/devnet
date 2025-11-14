@@ -1,0 +1,167 @@
+.container-actility-table {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.actility-table {
+    text-align: center;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.actility-table th,  .actility-table td {
+    border: solid 1px black;
+    padding: 3px;
+}
+
+.actility-table th {
+    background-color: #303030;
+    color: white;
+}
+
+.popup-message-actility {
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    background-color: rgba(0, 0, 0, 0.293);
+    position: absolute;
+    display: grid;
+    place-content: center;
+}
+
+.popup-message-actility div{
+    width: 30rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: solid black 1px;
+}
+.buttons-container-popup button {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.4rem;
+}
+
+.edit-actility-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-actility-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container-form-actility {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-form-actility h2 {
+    position: absolute;
+    top: 20px;
+}
+
+.edit-actility-form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-actility-form label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.edit-actility-form input {
+    height: 1.6rem;
+}
+
+.confirm-edit-actility {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-edit-actility {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+
+}
+
+.edit-cancel-actility-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container-form-delete-actility {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form-delete-actility h2 {
+    width: 80%;
+    text-align: center;
+}
+
+.new-actility-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-actility-container button {
+    width: 6rem;
+    margin: auto;
+    margin-top: 20px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.close-form-actility {
+    position: absolute;
+    top: 5px;
+    background-color: red;
+    right: 15px;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 10rem;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+}

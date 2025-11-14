@@ -1,0 +1,39 @@
+.fw-dash-table,
+.fw-dash-table-home {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.fw-dash-table th,
+.fw-dash-table td,
+.fw-dash-table-home th,
+.fw-dash-table-home td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.fw-dash-table {
+  width: 35rem;
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.fw-dash-table th {
+  font-size: 1rem;
+}
+.fw-dash-table td {
+  font-size: 0.9rem;
+}
+
+.fw-dash-table-home {
+  width: 90%;
+}
+
+.fw-dash-table-home th,
+.fw-dash-table-home td {
+  font-size: 0.9rem;
+}

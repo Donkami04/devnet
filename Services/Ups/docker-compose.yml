@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  historic-db:
+    image: mysql:latest
+    container_name: historic-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: camilo123
+      MYSQL_DATABASE: historic-devnet
+      MYSQL_USER: camilo
+      MYSQL_PASSWORD: camilo123
+    ports:
+      - "33061:3306"  # Mapea el puerto 33061 de la máquina al puerto 3306 del contenedor
+    volumes:
+      - data_historic_devnet:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: phpmyadmin-historic
+    environment:
+      PMA_HOST: historic-db
+      PMA_PORT: 3306  # Puerto del contenedor MySQL
+      MYSQL_ROOT_PASSWORD: camilo123
+    ports:
+      - "8081:80"  # Mapea el puerto 8081 de la máquina al puerto 80 del contenedor
+    depends_on:
+      - historic-db
+
+volumes:
+  data_historic_devnet:

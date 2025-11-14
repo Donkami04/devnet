@@ -1,0 +1,118 @@
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+/* 
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.main-title {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  color: #bd0b21;
+}
+
+.home-link{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  /* padding: 0.6rem 1.25rem; */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  margin-left: 1rem;
+  height: 50%;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9001f;
+}
+
+.admin-link {
+  background-color: #007bff;
+  height: 50%;
+  width: 4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-link {
+  position: absolute;
+  right: 10px;
+}
+
+.box-buttons-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: red; */
+  position: absolute;
+  right: 0;
+  width: 9rem;
+  height: 100%;
+}
+
+
+@media (max-width: 1130px) {
+  
+  .main-title {
+    position: absolute;
+    font-size: 1.8rem;
+  }
+  /* .logo{
+    width: 10rem;
+    height: 3rem;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+  } */
+}
+
+@media (max-width: 830px) {
+
+  .main-title {
+    position: absolute;
+    font-size: 1.6rem;
+
+  }
+  .logo{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .button-interfaz {
+    display: none;
+  }
+
+}

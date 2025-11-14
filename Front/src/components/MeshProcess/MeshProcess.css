@@ -1,0 +1,86 @@
+.container-process-mesh-table {
+  max-height: calc(100vh - 14rem - 60px);
+  overflow-y: auto;
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.process-mesh-table {
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.process-mesh-table thead {
+  background-color: #374151;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.process-mesh-table th {
+  background-color: #454646;
+  padding: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* .process-mesh-table th {
+  background-color: rgb(52, 52, 52);
+  color: white;
+  border-right: white 1px solid;
+} */
+
+.process-mesh-table td {
+  font-size: 12px;
+  padding: 5px;
+  border-bottom: 1px solid #d1d5db;
+  color: #4b5563;
+}
+
+.container-process-mesh-table input {
+  margin-bottom: 10px;
+  height: 0.1rem;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 400px;
+}
+
+.filtres-processmesh-container {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.input-mesh-process {
+  height: 1rem;
+  align-items: center;
+}
+
+.label-mesh-process {
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  justify-content: space-evenly;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+.counter-processmesh {
+  display: flex;
+  align-items: center;
+  height: 0.6rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}

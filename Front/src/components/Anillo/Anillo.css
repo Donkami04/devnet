@@ -1,0 +1,648 @@
+.background-anillo {
+  position: relative;
+  /* height: 100vh; */
+}
+
+.main-anillo-container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main-anillo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-lights-anillo-container {
+  position: absolute;
+  width: 1200px;
+  height: 2210px;
+  margin: auto;
+}
+
+
+
+.status-light-anillo {
+  border: black solid 1px;
+  width: 24px;
+  height: 10px;
+  /* background-color: red; */
+  position: absolute;
+}
+
+
+.anillo-green {
+  background-color: rgb(148, 247, 0);
+}
+
+.anillo-red {
+  background-color: red;
+  font-weight: bold;
+}
+
+.anillo-blue {
+  background-color: rgb(29, 158, 250);
+  font-weight: bold;
+}
+
+.anillo-white {
+  background-color:white;
+}
+
+.anillo-grey {
+  background-color:rgb(156, 156, 156);
+}
+
+.anillo-orange {
+  background-color: orange;
+  /* animation: titilar-yellow 2s infinite; */
+  font-weight: bold;
+}
+
+@keyframes anillo-titilar-red {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: rgb(253, 173, 173);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+.button-zoom-container {
+  width: 50px;
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+}
+
+.button-zoom {
+  margin-bottom: 15px;
+  width: 30px;
+  border-radius: 25%;
+}
+
+.background-anillo {
+  transition: transform 0.3s ease; /* Agrega una transición suave al hacer zoom */
+}
+
+/* Define diferentes niveles de zoom según sea necesario */
+.background-anillo.zoom-1 {
+  transform: scale(1);
+}
+
+.background-anillo.zoom-2 {
+  transform: scale(1.2); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-anillo.zoom-3 {
+  transform: scale(1.7); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-anillo.zoom-4 {
+  transform: scale(2); /* Puedes ajustar el valor según sea necesario */
+}
+.background-anillo.zoom-5 {
+  transform: scale(2.2);
+}
+
+.background-anillo.zoom-6 {
+  transform: scale(2.7); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-anillo.zoom-7 {
+  transform: scale(3); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-anillo.zoom-8 {
+  transform: scale(3.2); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-anillo {
+  transition: transform 0.3s ease;
+  transform-origin: top;
+}
+
+.button-zoom {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.status-light-anillo-container {
+  position: absolute;
+  top: 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.status-light-anillo-opit-container {
+  position: absolute;
+  top: 100px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.id15596 {
+  top: 172px;
+  left: 340px;
+}
+
+.id15609 {
+  top: 147px;
+  left: 307px;
+  width: 30px;
+}
+
+.id17572 {
+  top: 124px;
+  left: 310px;
+  width: 30px;
+}
+
+.id15608 {
+  top: 137px;
+  left: 228px;
+}
+
+.id15685 {
+  top: 137px;
+  left: 193px;
+  width: 24px;
+}
+
+.id15684 {
+  top: 175px;
+  left: 164px;
+}
+
+.id15607 {
+  top: 207px;
+  left: 164px; 
+  width: 38px;
+}
+
+.id15606 {
+  top: 228px;
+  left: 190px; 
+  width: 38px;
+}
+
+.id15605 {
+  top: 250px;
+  left: 190px; 
+  width: 38px;
+}
+
+.id15604 {
+  top: 273px;
+  left: 164px; 
+  width: 38px;
+}
+
+.id15583 {
+  top: 228px;
+  left: 248px; 
+}
+
+/* Nuevo */
+.id18452 {
+  top: 228px;
+  left: 327px; 
+}
+
+/* Nuevo */
+.id17408 {
+  top: 230px;
+  left: 446px; 
+}
+.id20016 {
+  top: 268px;
+  left: 475px; 
+}
+.id20800 {
+  top: 298px;
+  left: 475px; 
+}
+
+.id15611 {
+  top: 286px;
+  left: 232px; 
+}
+
+.id15603 {
+  top: 307px;
+  left: 164px;
+  width: 30px;
+}
+
+.id15602 {
+  top: 370px;
+  left: 175px;
+  width: 30px;
+}
+
+.id15612 {
+  top: 420px;
+  left: 221px;
+}
+
+.id15670 {
+  top: 430px;
+  left: 299px;
+}
+
+.id15613 {
+  top: 470px;
+  left: 242px;
+}
+
+.id15628 {
+  top: 495px;
+  left: 242px;
+}
+
+.id15668 {
+  top: 431px;
+  left: 342px;
+}
+
+.id15669 {
+  top: 431px;
+  left: 421px;
+}
+
+.id15614 {
+  top: 469px;
+  left: 534px;
+}
+
+.id15615 {
+  top: 432px;
+  left: 550px;
+}
+
+.id17753 {
+  top: 432px;
+  left: 470px;
+}
+
+.id17754 {
+  top: 469px;
+  left: 488px;
+  width: 28px;
+}
+
+.id15610 {
+  top: 540px;
+  left: 503px;
+}
+
+.id15631 {
+  top: 621px;
+  left: 500px;
+  width: 30px;
+}
+
+.id15633 {
+  top: 607px;
+  left: 503px;
+  /* font-size: 8px;
+  height: 8px; */
+}
+
+.id15634 {
+  top: 594px;
+  left: 503px;
+  /* font-size: 8px;
+  height: 8px; */
+}
+
+.id15632 {
+  top: 652px;
+  left: 480px;
+  /* font-size: 8px;
+  height: 8px; */
+  width: 35px;
+}
+
+.id15629 {
+  top: 605px;
+  left: 542px;
+}
+
+.id15630 {
+  top: 677px;
+  left: 543px;
+}
+
+.id15636 {
+  top: 745px;
+  left: 537px;
+  width: 34px;
+}
+
+.id15585 {
+  top: 432px;
+  left: 673px;
+}
+
+.id15586 {
+  top: 432px;
+  left: 595px;
+}
+
+.id15597 {
+  top: 432px;
+  left: 718px;
+}
+
+.id15598 {
+  top: 432px;
+  left: 797px;
+}
+
+.id15599 {
+  top: 472px;
+  left: 780px;
+}
+
+.id15638 {
+  top: 528px;
+  left: 780px;
+}
+
+.id15637 {
+  top: 599px;
+  left: 796px;
+  width: 28px;
+}
+
+.id15639 {
+  top: 612px;
+  left: 813px;
+}
+
+.id15587 {
+  top: 432px;
+  left: 843px;
+}
+
+.id15588 {
+  top: 425px;
+  left: 924px;
+}
+
+.id15593 {
+  top: 386px;
+  left: 963px;
+}
+
+.id15595 {
+  top: 340px;
+  left: 940px;
+}
+
+.id15594 {
+  top: 322px;
+  left: 994px;
+}
+
+/* Nuevo */
+.id18599 {
+  top: 320px;
+  left: 952px;
+}
+
+/* Nuevo */
+.id15648 {
+  top: 340px;
+  left: 905px;
+}
+
+.id15589 {
+  top: 223px;
+  left: 965px;
+}
+
+.id15590 {
+  top: 286px;
+  left: 994px;
+}
+
+/* Nuevo */
+.id18598 {
+  top: 279px;
+  left: 904px;
+}
+
+.id16562 {
+  top: 181px;
+  left: 965px;
+}
+
+.id16561 {
+  top: 135px;
+  left: 939px;
+}
+
+.id15600 {
+  top: 136px;
+  left: 887px;
+  width: 30px;
+}
+
+.id15601 {
+  top: 128px;
+  left: 803px;
+  width: 30px;
+}
+
+.id17757 {
+  top: 42px;
+  left: 442px;
+  width: 33px;
+  color: white;
+}
+
+.id17758 {
+  top: 24px;
+  left: 442px;
+  width: 33px;
+  color: white;
+}
+
+.id17759 {
+  top: 42px;
+  left: 601px;
+  width: 33px;
+  color: white;
+}
+
+.id17760 {
+  top: 22px;
+  left: 600px;
+  width: 33px;
+  color: white;
+}
+
+.id17761 {
+  top: 59px;
+  left: 592px;
+  width: 33px;
+  color: white;
+}
+
+.id17762 {
+  top: 59px;
+  left: 699px;
+  width: 33px;
+  color: white;
+}
+
+.id20630 {
+  top: 2px;
+  left: 404px;
+  width: 34px;
+}
+
+.id20594 {
+  top: 142px;
+  left: 410px;
+  width: 34px;
+}
+
+.id20646 {
+  top: 207px;
+  left: 525px;
+  /* width: 34px; */
+}
+.id20591 {
+  top: 470px;
+  left: 398px;
+}
+.id20584 {
+  top: 470px;
+  left: 498px;
+}
+.id20596 {
+  top: 470px;
+  left: 730px;
+}
+.id20593 {
+  top: 385px;
+  left: 1005px;
+}
+.id20590 {
+  top: 274px;
+  left: 1020px;
+}
+.id20592 {
+  top: 151px;
+  left: 1020px;
+}
+.id20703 {
+  top: 170px;
+  left: 860px;
+  width: 34px;
+}
+.id20689 {
+  top: 1px;
+  left: 642px;
+  width: 38px;
+}
+.id20645 {
+  top: -7px;
+  left: 335px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19532 {
+  top: 160px;
+  left: 530px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19524 {
+  top: 220px;
+  left: 685px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19510 {
+  top: 450px;
+  left: 143px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19518 {
+  top: 545px;
+  left: 392px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19520 {
+  top: 545px;
+  left: 485px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id20683 {
+  top: 545px;
+  left: 717px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19530 {
+  top: 440px;
+  left: 1050px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19522 {
+  top: 275px;
+  left: 1100px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19522 {
+  top: 280px;
+  left: 1100px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id19528 {
+  top: 175px;
+  left: 1100px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id20702 {
+  top: 240px;
+  left: 865px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.id20688 {
+  top: -7px;
+  left: 770px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}

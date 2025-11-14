@@ -1,0 +1,59 @@
+.table-container {
+  position: relative;
+  top: 4rem;
+  margin-left: 10px;
+  display: block;
+  overflow-x: auto;
+  width: 99%;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-container table th,
+.table-container table td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid black;
+  font-size: 0.6rem;
+  text-align: center;
+  word-break: break-all;
+}
+
+.table-container td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.table-container table th {
+  background-color: #444444;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.table-container tr:hover {
+  background-color: #ebebeb;
+}
+
+
+.no-match {
+  color: red;
+  font-weight: bold;
+  font-size: 160px;
+}
+
+.filtro {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.checkbox-filter {
+  margin-right: 10px;
+}

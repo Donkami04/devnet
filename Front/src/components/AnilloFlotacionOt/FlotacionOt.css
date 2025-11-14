@@ -1,0 +1,261 @@
+.anilloug-image-container {
+  width: 1050px;
+  margin: auto;
+}
+
+.anilloug-image {
+  width: 100%;
+  height: 100%;
+
+}
+
+.status-light-ping-flotacionot {
+  border: black solid 1px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  font-size: 0.55rem;
+  margin-top: 57px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.status-light-interface-flotacionot {
+  border: black solid 1px;
+  width: 25px;
+  height: 8px;
+  position: absolute;
+  font-size: 0.40rem;
+  margin-top: 57px;
+  cursor: pointer;
+  justify-content: center;
+  display: grid;
+  place-content: center;
+
+}
+
+.main-lights-anilloug-container {
+  position: absolute;
+  width: 850px;
+  z-index: 999999;
+  top: 4rem;
+}
+
+.id19874 {
+  top: 180px;
+  left: 160px;
+}
+.id19882-battery {
+  top: 160px;
+  left: 160px;
+}
+
+.id16597 {
+  top: 180px;
+  left: 390px;
+}
+.id16604-battery {
+  top: 160px;
+  left: 390px;
+}
+
+.id18725 {
+  top: 175px;
+  left: 600px;
+}
+.id18736-battery {
+  top: 155px;
+  left: 600px;
+}
+
+.id16477 {
+  top: 175px;
+  left: 840px;
+}
+.id16484-battery {
+  top: 155px;
+  left: 840px;
+}
+
+.id18075 {
+  top: 305px;
+  left: 166px;
+}
+.id17906 {
+  top: 359px;
+  left: 166px;
+}
+.id18077 {
+  top: 415px;
+  left: 166px;
+}
+.id18063 {
+  top: 305px;
+  left: 397px;
+}
+.id18065 {
+  top: 359px;
+  left: 397px;
+}
+.id17908 {
+  top: 415px;
+  left: 397px;
+}
+.id18061 {
+  top: 475px;
+  left: 397px;
+}
+.id18067 {
+  top: 530px;
+  left: 397px;
+}
+.id18069 {
+  top: 585px;
+  left: 397px;
+}
+.id18071 {
+  top: 640px;
+  left: 397px;
+}
+.id18073 {
+  top: 693px;
+  left: 397px;
+}
+.id18081 {
+  top: 305px;
+  left: 609px;
+}
+.id18083 {
+  top: 359px;
+  left: 609px;
+}
+.id18085 {
+  top: 415px;
+  left: 609px;
+}
+.id18087 {
+  top: 473px;
+  left: 609px;
+}
+.id18089 {
+  top: 530px;
+  left: 609px;
+}
+.id18091 {
+  top: 584px;
+  left: 609px;
+}
+.id18093 {
+  top: 640px;
+  left: 609px;
+}
+.id18095 {
+  top: 694px;
+  left: 609px;
+}
+.id18079 {
+  top: 305px;
+  left: 842px;
+}
+.id17902 {
+  top: 359px;
+  left: 842px;
+}
+.id17904 {
+  top: 415px;
+  left: 842px;
+}
+.id19853 {
+  top: 155px;
+  left: 190px;
+}
+.id19854 {
+  top: 220px;
+  left: 297px;
+  width: 20px;
+  height: 7px;
+}
+.id19855 {
+  top: 220px;
+  left: 322px;
+  width: 20px;
+  height: 7px;
+}
+.id19856 {
+  top: 220px;
+  left: 521px;
+  width: 20px;
+  height: 7px;
+}
+.id19858 {
+  top: 220px;
+  left: 546px;
+  width: 20px;
+  height: 7px;
+}
+.id19857 {
+  top: 220px;
+  left: 744px;
+  width: 20px;
+  height: 7px;
+}
+.id19859 {
+  top: 220px;
+  left: 769px;
+  width: 20px;
+  height: 7px;
+}
+.id19861 {
+  top: 73px;
+  left: 516px;
+  height: 9px;
+  width: 30px;
+}
+.id19860 {
+  top: 73px;
+  left: 685px;
+  height: 9px;
+  width: 30px;
+}
+.id17502 {
+  top: 73px;
+  left: 479px;
+  height: 9px;
+  width: 30px;
+}
+.id17498 {
+  top: 69px;
+  left: 306px;
+  height: 9px;
+  width: 30px;
+}
+.id17499 {
+  top: 82px;
+  left: 306px;
+  height: 9px;
+  width: 30px;
+}
+.id19863 {
+  top: 69px;
+  left: 270px;
+  height: 9px;
+  width: 30px;
+}
+.id19864 {
+  top: 82px;
+  left: 270px;
+  height: 9px;
+  width: 30px;
+}
+.id19862 {
+  top: 138px;
+  left: 188px;
+  height: 9px;
+  width: 30px;
+}
+.id16419 {
+  top: 85px;
+  left: 768px;
+  
+}

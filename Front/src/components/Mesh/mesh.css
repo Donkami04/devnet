@@ -1,0 +1,54 @@
+.mesh-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.mesh-table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 99%;
+    /* margin-bottom: 30px; */
+}
+
+.mesh-table th,
+.mesh-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.mesh-table th {
+    font-size: 1rem;
+    background-color: rgba(193, 177, 177, 0.131);
+}
+
+.mesh-table tbody td {
+    font-size: 0.8rem;
+}
+
+.block-cell {
+    text-align: left;
+}
+
+.mesh-valor {
+    font-weight: 100;
+}
+
+.container-input-mesh {
+    margin-left: 10px;
+    width: 30rem;
+}
+.text-input-mesh {
+    width: 20px;
+    text-align: center;
+}
+
+.box-mesh {
+    margin-left: 10px;
+}
+
+.filter-mesh-container {
+    margin-left: 10px;
+    /* position: relative;
+    top: 10px; */
+}

@@ -1,0 +1,25 @@
+.table-group-prtg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    max-height: calc(100vh - 4rem - 60px);
+    overflow-y: auto;
+}
+
+.table-group-prtg {
+    width: 70%;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table-group-prtg th, .table-group-prtg td {
+    border: solid 1px black;
+    padding: 6px;
+}
+
+.table-group-prtg th {
+    height: 2rem;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}

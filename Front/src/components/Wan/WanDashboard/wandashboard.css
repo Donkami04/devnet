@@ -1,0 +1,51 @@
+.wan-kpi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wan-kpi-container-home {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.table-dashboard-wan {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.table-dashboard-wan-home {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table-dashboard-wan td {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.table-dashboard-wan-home td {
+  font-size: 1.2rem;
+  border: 1px solid #000000;
+  padding: 15px;
+}
+
+.table-dashboard-wan td:first-child {
+  font-weight: bold;
+}
+
+/* .td-wan-dash {
+  font-size: 1.5rem;
+  text-align: center;
+} */
+
+/* .left-td-wan-dash {
+  font-size: 1.2rem;
+  text-align: center;
+} */

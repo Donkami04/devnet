@@ -1,0 +1,59 @@
+.module-datetime-container {
+  width: 17rem;
+  /* position: absolute; */
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+
+.module-datetime-container li {
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  margin-left: 10px;
+  width: 15px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: red;
+  color: transparent;
+  height: 15px;
+}
+.green {
+  margin-left: 10px;
+  width: 15px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: rgb(0, 255, 13);
+  color: transparent;
+  height: 15px;
+}
+
+.datetimes_inf_gen_container {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  border: solid 2px purple;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  z-index: 9999;
+  margin-left: 15px;
+}
+
+.icon-datetime-infgen-container {
+  width: 16rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.info-infgen-module {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}

@@ -1,0 +1,28 @@
+
+.top-section, .bottom-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.dashboard-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 830px) {
+  .main-dashboard-container {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .top-section, .bottom-section {
+    flex-direction: column;
+  }
+}

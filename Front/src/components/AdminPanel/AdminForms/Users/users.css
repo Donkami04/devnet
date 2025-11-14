@@ -1,0 +1,118 @@
+.users-main-container {
+  display: grid;
+  place-items: center;
+  margin-top: 7rem;
+}
+
+.users-main-container table {
+  width: 80%;
+  border-collapse: collapse;
+  ;
+}
+
+.users-main-container th,
+.users-main-container td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+  font-size: 1rem
+}
+
+.users-main-container td {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+
+.users-main-container table th {
+  background-color: #444444;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem
+}
+
+.users-main-container tr:hover {
+  background-color: #ebebeb;
+}
+
+.filtro-devices {
+    margin-top: 10px;
+}
+
+/* Estilos para el modal personalizado */
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el fondo del modal */
+.custom-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cancel-button {
+  background-color: red;
+}
+
+.button-form-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.custom-modal, .td-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.td-icons-container {
+  justify-content: space-evenly;
+  
+}
+
+.td-icons-container div {
+  cursor: pointer;
+
+}
+
+
+.form-title-users {
+  font-size: 2rem;
+}
+.form-users-label {
+  font-size: 1.5rem;
+}
+
+.input-users {
+  font-size: 1rem;
+  height: 2rem;
+  margin-top: 0;
+  border: solid 1px;
+  border-radius: 7px;
+}
+
+.confirm-delete-message {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.modal-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,32 @@
+node_modules/
+database/
+__pycache__
+venv/
+Mesh_Process_2/
+
+### VisualStudioCode ###>
+
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+
+Anillo_Ug/.env
+
+.vscode/*
+.vscode/
+.vscode

@@ -1,0 +1,108 @@
+.dragos-image-container {
+  width: 1050px;
+  margin: auto;
+}
+
+.dragos-image {
+  width: 100%;
+  height: 100%;
+}
+
+.status-light-dragos {
+  height: 15px;
+  position: absolute;
+  font-size: 0.55rem;
+  margin-top: 57px;
+  text-align: center;
+  align-content: center;
+  /* border: solid black 1px; */
+}
+
+.main-lights-dragos-container {
+  position: absolute;
+  width: 850px;
+  z-index: 999999;
+  top: 4rem;
+}
+
+/* Taller electronico */
+.id17493 {
+  top: 617px;
+  left: 390px;
+  width: 35px;
+}
+.id17497 {
+  top: 495px;
+  left: 798px;
+  width: 35px;
+}
+.id17481 {
+  top: 565px;
+  left: 310px;
+  width: 32px;
+}
+.id17495 {
+  top: 438px;
+  left: 490px;
+  width: 35px;
+}
+.id20154 {
+  top: 445px;
+  left: 210px;
+  width: 37px;
+}
+.id20153 {
+  top: 195px;
+  left: 622px;
+  width: 33px;
+}
+.id17155 {
+  top: 275px;
+  left: 772px;
+  width: 36px;
+}
+.id20152 {
+  top: 175px;
+  left: 385px;
+  width: 36px;
+}
+.id20151 {
+  top: 253px;
+  left: 189px;
+  width: 36px;
+}
+.id20368 {
+  top: 80px;
+  left: 445px;
+  width: 36px;
+}
+.id20367 {
+  top: 180px;
+  left: 860px;
+  width: 36px;
+}
+.id20364 {
+  top: 610px;
+  left: 670px;
+  width: 36px;
+}
+.id20365 {
+  top: 625px;
+  left: 857px;
+  width: 36px;
+}
+.id20366 {
+  top: 610px;
+  left: 960px;
+  width: 36px;
+}
+.id20360 {
+  top: 550px;
+  left: 570px;
+  width: 36px;
+}
+.id20361 {
+  top: 630px;
+  left: 145px;
+  width: 36px;
+}

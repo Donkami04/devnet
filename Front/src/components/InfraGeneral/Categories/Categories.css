@@ -1,0 +1,50 @@
+.table-ig-categories-container {
+  /* height: calc(100vh - 4rem); */
+  position: relative;
+  margin-top: 30px;
+  /* width: 100rem; */
+}
+
+.table-ig-categories-container table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-ig-categories-container table th {
+  font-size: 1.3rem;
+  border: solid 1px black;
+}
+
+.table-ig-categories-container table td {
+  font-size: 1rem;
+  border: solid 1px black;
+  height: 2rem;
+}
+d
+/* .table-ig-categories-container table td a {d
+    color: black;
+} */
+d
+.td-category-ig a {
+  color: blue;
+}
+
+.historic-prtg-button {
+  background-color: #007bff;
+  height: 3rem;
+  width: 6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 6px 6px 6px 6px;
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  color: white;
+}

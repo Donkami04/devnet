@@ -1,0 +1,40 @@
+.mesh-dash-table,
+.mesh-dash-table-home {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.mesh-dash-table th,
+.mesh-dash-table td,
+.mesh-dash-table-home th,
+.mesh-dash-table-home td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.mesh-dash-table {
+  width: 45rem;
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.mesh-dash-table th {
+  font-size: 1rem;
+}
+.mesh-dash-table td {
+  font-size: 0.9rem;
+}
+
+.mesh-dash-table-home {
+  width: 80%;
+}
+
+.mesh-dash-table-home th,
+.mesh-dash-table-home td {
+  font-size: 0.8rem;
+
+}

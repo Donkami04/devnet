@@ -1,0 +1,94 @@
+.anillotetra-image-container {
+  width: 1050px;
+  margin: auto;
+}
+
+.anillotetra-image {
+  width: 100%;
+  height: 100%;
+}
+
+.status-light-tetra {
+  border: black solid 1px;
+  width: 43px;
+  height: 10px;
+  position: absolute;
+  font-size: 0.55rem;
+  margin-top: 57px;
+  text-align: center;
+  align-content: center;
+}
+
+.main-lights-tetra-container {
+  position: absolute;
+  width: 850px;
+  z-index: 999999;
+  top: 4rem;
+}
+
+
+.id20047 {
+  width: 35px;
+  top: 102px;
+  left: 505px;
+}
+
+.id20054 {
+  width: 28px;
+  top: 244px;
+  left: 565px;
+}
+.id20053 {
+  width: 28px;
+  top: 277px;
+  left: 622px;
+}
+.id19756 {
+  width: 28px;
+  top: 332px;
+  left: 532px;
+  border-radius: 25px;
+}
+.id20051 {
+  width: 38px;
+  top: 246px;
+  left: 377px;
+}
+.id20052 {
+  width: 38px;
+  top: 216px;
+  left: 367px;
+}
+.id20050 {
+  width: 24px;
+  top: 555px;
+  left: 132px;
+}
+.id20048 {
+  width: 24px;
+  top: 600px;
+  left: 135px;
+}
+.id20049 {
+  width: 24px;
+  top: 584px;
+  left: 148px;
+}
+.id19927 {
+  width: 28px;
+  border-radius: 25px;
+  top: 682px;
+  left: 120px;
+}
+.id18649 {
+  width: 28px;
+  border-radius: 25px;
+  top: 656px;
+  left: 282px;
+}
+.id19358 {
+  width: 28px;
+  border-radius: 25px;
+  top: 710px;
+  left: 35px;
+}

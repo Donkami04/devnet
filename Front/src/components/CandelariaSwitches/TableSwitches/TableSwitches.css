@@ -1,0 +1,60 @@
+.table-container-sw {
+  position: relative;
+  top: 4rem;
+  margin-left: 10px;
+  display: block;
+  overflow-x: auto;
+  width: 99%;
+}
+
+.table-container-sw table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container-sw th,
+.table-container-sw td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.table-container-sw td {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.table-container-sw table th {
+  background-color: #382C7E;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+
+
+.table-container-sw tr:hover {
+  background-color: #ebebeb;
+}
+
+
+.no-match {
+  color: red;
+  font-weight: bold;
+  font-size: 160px;
+}
+
+.filtro {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.checkbox-filter {
+  margin-right: 10px;
+}
+

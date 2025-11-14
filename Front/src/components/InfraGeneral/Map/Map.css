@@ -1,0 +1,357 @@
+.background-infra-general {
+  background-color: rgba(162, 160, 160, 0.736);
+  position: relative;
+  height: 100vh;
+}
+
+.main-map-container {
+  width: 1450px;
+  margin: auto;
+}
+
+.main-map-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-lights-container {
+  position: absolute;
+  width: 1450px;
+  height: 20px;
+  margin: auto;
+  top: 0;
+}
+
+.status-light-map-container {
+  position: absolute;
+}
+
+.status-light-inf-gen {
+  border: black solid 1px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  /* background-color: red; */
+}
+
+.fw-santiago {
+  top: 365px;
+  right: 100px;
+}
+
+.fw-chamonate {
+  top:425px;
+  right: 100px;
+}
+
+.fw-ralun {
+  top: 480px;
+  right: 100px;
+}
+
+.fw-dpto-legal {
+  top: 535px;
+  right: 100px;
+}
+
+.fw-copiapo {
+  top: 597px;
+  right: 100px;
+}
+
+.fw-azure {
+  top: 300px;
+  right: 100px;
+}
+
+.internet {
+  top: 460px;
+  right: 180px;
+}
+
+.canal-starlink {
+  top: 315px;
+  right: 310px;
+}
+
+.canal-admin {
+  top: 405px;
+  right: 310px;
+}
+
+.canal-conce {
+  top: 495px;
+  right: 310px;
+}
+
+.canal-ojos {
+  top: 580px;
+  right: 310px;
+}
+
+.fw-admin {
+  top: 335px;
+  right: 485px;
+}
+
+.fw-conce {
+  top: 470px;
+  right: 490px;
+}
+
+.fw-ojos {
+  top: 580px;
+  right: 490px;
+}
+
+.core-admin-it {
+  top: 335px;
+  right: 610px;
+}
+
+.core-conce-it {
+  top: 455px;
+  right: 610px;
+}
+
+.core-ojos-it {
+  top: 585px;
+  right: 610px;
+}
+
+.status-wlc-negocio {
+  top: 200px;
+  right: 823px;
+}
+
+.status-wlc-mesh {
+  top: 603px;
+  right: 813px;
+}
+
+.clcanasmsot01 {
+  top: 680px;
+  right: 1370px;
+}
+.clcanasmsit01 {
+  top: 610px;
+  right: 1370px;
+}
+.clcanasmsit02 {
+  top: 610px;
+  right: 1299px;
+}
+.clcanasmccit01 {
+  top: 610px;
+  right: 1225px;
+}
+.clcanasmccot01 {
+  top: 680px;
+  right: 1225px;
+}
+.clcanasmsot02 {
+  top: 680px;
+  right: 1299px;
+}
+.cloiosasmccit01 {
+  top: 610px;
+  right: 980px;
+}
+.clojosasmccot01 {
+  top: 680px;
+  right: 980px;
+}
+.clojosasmsit01 {
+  top: 611px;
+  right: 1120px;
+}
+.clojosasmsit02 {
+  top: 611px;
+  right: 1048px;
+}
+.clojosasmsot01 {
+  top: 680px;
+  right: 1120px;
+}
+.clojosasmsot02 {
+  top: 680px;
+  right: 1048px;
+}
+
+.fw-ot {
+  top: 408px;
+  right: 855px;
+}
+
+.coreOpitConce {
+  top: 538px;
+  right: 815px;
+}
+.coreOpitAdmin {
+  top: 538px;
+  right: 875px;
+}
+.coreOtNxAdmin {
+  top: 538px;
+  right: 875px;
+}
+
+.cucm-pub {
+  top: 42px;
+  right: 945px;
+}
+.coreOtNxConce {
+  top: 245px;
+  right: 1102px;
+}
+.coreOtNxAdmin {
+  top: 245px;
+  right: 1152px;
+}
+
+.uccx {
+  top: 42px;
+  right: 900px;
+}
+
+.dist-adm {
+  top: 85px;
+  right: 770px;
+}
+
+.admin-dna {
+  top: 145px;
+  right: 655px;
+}
+
+.conce-dna {
+  top: 145px;
+  right: 605px;
+}
+
+.dist-conce {
+  top: 668px;
+  right: 795px;
+}
+
+.ccucm-sub {
+  top: 668px;
+  right: 670px;
+}
+
+.swCoreOtAdmin {
+  top: 330px;
+  right: 1015px;
+}
+.swCoreOtConce {
+  top: 436px;
+  right: 1018px;
+}
+
+.coreUgAdmin {
+  top: 330px;
+  right: 1190px;
+}
+.coreUgAlcaparosa {
+  top: 330px;
+  right: 1277px;
+}
+.coreUgOjos {
+  top: 530px;
+  right: 1277px;
+}
+.coreUgConce {
+  top: 520px;
+  right: 1190px;
+}
+.coreUgSantos {
+  top: 424px;
+  right: 1330px;
+}
+
+.inf-gen-green {
+  background-color: rgb(148, 247, 0);
+}
+
+.inf-gen-red {
+  background-color: red;
+  animation: titilar 2s infinite;
+}
+
+.inf-gen-yellow {
+  background-color: yellow;
+  animation: titilar-yellow 2s infinite;
+}
+
+
+@keyframes titilar {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: rgb(102, 0, 0)
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes titilar-yellow {
+  0% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: rgb(171, 160, 0)
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.button-zoom-container {
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+
+}
+
+.button-zoom {
+  margin-bottom: 15px;
+  width: 30px;
+  border-radius: 25%;
+  background-color: blue;
+  color: white;
+}
+
+.background-infra-general {
+  transition: transform 0.3s ease; /* Agrega una transición suave al hacer zoom */
+}
+
+/* Define diferentes niveles de zoom según sea necesario */
+.background-infra-general.zoom-1 {
+  transform: scale(1);
+}
+
+.background-infra-general.zoom-2 {
+  transform: scale(1.2); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-infra-general.zoom-3 {
+  transform: scale(1.7); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-infra-general.zoom-4 {
+  transform: scale(2); /* Puedes ajustar el valor según sea necesario */
+}
+
+.background-infra-general {
+  transition: transform 0.3s ease;
+  transform-origin: top;
+}
+
+.button-zoom {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+  
+}

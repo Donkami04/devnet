@@ -1,0 +1,243 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.system-container {
+  border: 2px black solid;
+  height: 20rem;
+  overflow: hidden;
+  
+}
+
+.home-kpi-dcs {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  font-size: 0.85rem;
+}
+
+.table-home-kpi-dcs {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-home-kpi-dcs th,
+.table-home-kpi-dcs td {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0.8rem;
+  height: 1.3rem;
+}
+
+.system-container-openpit {
+  height: 20rem;
+  
+}
+
+.name-system-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+
+.system-container h1 {
+  font-size: 2rem;
+}
+
+.home-kpi-table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+.home-kpi-table th,
+.home-kpi-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.flotacion-table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-kpi-openpit {
+  border-collapse: collapse;
+  width: 75%;
+  margin-top: 3rem;
+}
+
+.home-kpi-openpit th,
+.home-kpi-openpit td {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1rem;
+  padding: 4px;
+}
+
+.home-kpi-container {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-kpi-container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-kpi-container ul li {
+  font-weight: bold;
+}
+
+.link-system-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+}
+
+.link-system {
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.indicators-home li {
+  font-size: 1rem;
+}
+
+.button-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  height: 0.6rem;
+  background-color: #084ba3;
+  width: 4.2rem;
+}
+
+.link-open-pit {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  height: 0.1rem;
+  background-color: #084ba3;
+  width: 2rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.home-message-container {
+  width: 100%;
+  border: 2px solid green;
+  background-color: rgb(154, 243, 154);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.home-message-container p {
+  font-weight: bold;
+}
+
+.dash-mesh-home {
+  width: 95%;
+  text-align: center;
+}
+
+.dash-mesh-home th {
+  font-size: 1rem;
+}
+
+.dash-mesh-home table {
+  table-layout: fixed; /* Fijar el ancho de las celdas */
+  border-collapse: collapse;
+  height: 8rem;
+}
+
+.dash-mesh-home table td,
+.dash-mesh-home table th {
+  border: 1px solid black;
+  height: 10px;
+}
+
+.spinner-home-container {
+  height: calc(100% - 3rem);
+  z-index: 9999;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.links-spinner-home {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loader-openpit-container {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.home-tables-container-infra-dragos {
+  height: 100%;
+  display: grid;
+}
+
+.home-tables-container-infra-dragos h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .name-system-container h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .name-system-container h1 {
+    font-size: 1.5rem;
+  }
+}
