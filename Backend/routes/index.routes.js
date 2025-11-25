@@ -33,6 +33,7 @@ const licenciamientosRoutes = require("./licenciamientos.routes");
 const emailRoutes = require("./email.routes");
 const statusPrtgRoutes = require("./status_prtg.routes");
 const devnetRoutes = require("./devnet.routes");
+const lorawanRoutes = require("./anillo_lorawan.routes");
 const router = express.Router();
 
 const allRoutes = (app) => {
@@ -71,6 +72,7 @@ const allRoutes = (app) => {
   router.use("/email", emailRoutes);
   router.use("/status-prtg", statusPrtgRoutes);
   router.use("/devnet", devnetRoutes);
+  router.use("/anillo-lorawan", lorawanRoutes);
 };
 
 module.exports = { allRoutes };

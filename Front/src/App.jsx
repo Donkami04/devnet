@@ -61,6 +61,7 @@ import { Dragos } from "./components/Dragos/Dragos";
 import { Licenciamientos } from "./components/InfraGeneral/Licenciamientos/Licenciamientos";
 import { Anillov2 } from "./components/Anillo/Anillov2";
 import { InventarioCmbd } from "./components/Informes/InventarioCmbd";
+import { AnilloLorawan } from "./components/AnilloLorawan/AnilloLorawan";
 
 function App() {
   const location = useLocation();
@@ -150,6 +151,7 @@ function App() {
         /> */}
         <Route path="/monitoreo/anillo/ug" element={<AnilloUg />} />
         <Route path="/monitoreo/anillo/tetra" element={<AnilloTetra />} />
+        <Route path="/monitoreo/anillo/lorawan" element={<AnilloLorawan />} />
         <Route path="/monitoreo/infraestrucura-general/procesos-devnet" element={<Dockers />} />
         <Route path="/candelaria/monitoreo/flotacion/ot" element={<FlotacionOt />} />
         <Route path="/candelaria/monitoreo/mra" element={<Mra />} />
@@ -158,8 +160,8 @@ function App() {
       </Routes>
 
       <div className="refresh-button-container">
-        <span title={""} style={{ marginLeft: "10px" }} className="refresh-button-container-2">
-          Version 2.7.0
+        <span title={"Add Lorawan System"} style={{ marginLeft: "10px" }} className="refresh-button-container-2">
+          Version 2.8.0
         </span>
         <div className="pause-and-icons-container">
           <IconsPage />

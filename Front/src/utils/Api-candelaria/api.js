@@ -56,6 +56,15 @@ export const getAnilloUgUpDown = async () => {
     });
 };
 
+export const getAnilloLorawanUpDown = async () => {
+  return axios
+    .get(`${BASE_API_URL}/anillo-lorawan/updown`)
+    .then((response) => response.data)
+    .catch((error) => {
+      throw new Error("getAnilloLorawanUpDown (ANILLO LORAWAN):Error del API REST Candealaria : ", error);
+    });
+};
+
 export const getIndicators = async () => {
   return axios
     .get(`${BASE_API_URL}/indicators/`)
@@ -368,6 +377,15 @@ export const getDataAnillo = async () => {
     .then((response) => response.data)
     .catch((error) => {
       throw new Error("ANILLO: Error del API REST Candealaria : ", error);
+    });
+};
+
+export const getDataAnilloLorawan = async () => {
+  return axios
+    .get(`${BASE_API_URL}/anillo-lorawan`)
+    .then((response) => response.data)
+    .catch((error) => {
+      throw new Error("ANILLO LORAWAN: Error del API REST Candealaria : ", error);
     });
 };
 

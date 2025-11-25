@@ -11,6 +11,7 @@ import {
   getMraUpDown,
   getPrtgStatus,
   getUpsKpi,
+  getAnilloLorawanUpDown
 } from "../../utils/Api-candelaria/api";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { DevicesDash } from "../../components/Devices/DevicesDash/DevicesDash";
@@ -50,6 +51,7 @@ export function Home() {
   const [dataMeshProcessDown, setDataMeshProcessDown] = useState([]);
   const [upDownAnilloUg, setUpDownAnilloUg] = useState([]);
   const [upDownTetra, setUpDownTetra] = useState([]);
+  const [upDownLorawan, setUpDownLorawan] = useState([]);
   const [dcsIndicators, setDcsIndicators] = useState({});
   const [flotacionData, setFlotacionData] = useState({});
   const [mra, setMra] = useState({});
@@ -81,6 +83,8 @@ export function Home() {
     const fetchData = async () => {
       try {
         const dataMra = await getMraUpDown();
+        const dataLorawan = await getAnilloLorawanUpDown();
+        console.log("dataLorawan", dataLorawan);
         setMra(dataMra.data);
         const flotacionDataUpDown = await getDataFlotacionOtUpDown();
         setFlotacionData(flotacionDataUpDown.data);
@@ -152,6 +156,7 @@ export function Home() {
           });
         }
 
+        setUpDownLorawan(dataLorawan.data);
         setDcsCandeIndicators(dcsCandelaria);
         setSpinnerDcsCandelaria(false);
         setSpinnerUps(false);
@@ -520,6 +525,16 @@ export function Home() {
                       <td>{upDownTetra.downElements.length}</td>
                       <td>
                         <Link className="link-open-pit" to="/monitoreo/anillo/tetra">
+                          Ver
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Lorawan</td>
+                      <td>{upDownLorawan.upElements}</td>
+                      <td>{upDownLorawan.downElements}</td>
+                      <td>
+                        <Link className="link-open-pit" to="/monitoreo/anillo/lorawan">
                           Ver
                         </Link>
                       </td>

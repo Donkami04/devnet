@@ -16,8 +16,8 @@ services:
   #   container_name: phpmyadmin
   #   environment:
   #     PMA_HOST: database
-  #     PMA_USER: devnet
-  #     PMA_PASSWORD: devnet.0
+  #     PMA_USER: camilo
+  #     PMA_PASSWORD: camilo123
   #   ports:
   #     - "8080:80"
   #   restart: always
@@ -315,15 +315,18 @@ services:
   #     - DB_PASSWORD_HISTORIC=${DB_PASSWORD_HISTORIC}
   #     - DB_DATABASE_HISTORIC=${DB_DATABASE_HISTORIC}
 
-  dockers-monitoring:
-    container_name: monitoreo_dockers
+  anillo_lorawan:
+    container_name: anillo_lorawan
     build:
-      context: Services/Docker_Monitoring
+      context: Services/Anillo_Lorawan
     restart: always
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - ENVIRONMENT=${ENVIRONMENT}
+      - PRTG_USERNAME=${PRTG_USERNAME}
+      - PRTG_PASSWORD=${PRTG_PASSWORD}
+      - CISCO_DEVICES_API_USERNAME_1=${CISCO_DEVICES_API_USERNAME_1}
+      - CISCO_DEVICES_API_USERNAME_2=${CISCO_DEVICES_API_USERNAME_2}
+      - CISCO_API_PASSWORD=${CISCO_API_PASSWORD}
       - DB_PROD_HOST=${DB_PROD_HOST}
       - DB_PROD_USER=${DB_PROD_USER}
       - DB_PROD_PASSWORD=${DB_PROD_PASSWORD}
@@ -332,6 +335,24 @@ services:
       - DB_USER_HISTORIC=${DB_USER_HISTORIC}
       - DB_PASSWORD_HISTORIC=${DB_PASSWORD_HISTORIC}
       - DB_DATABASE_HISTORIC=${DB_DATABASE_HISTORIC}
+
+  # dockers-monitoring:
+  #   container_name: monitoreo_dockers
+  #   build:
+  #     context: Services/Docker_Monitoring
+  #   restart: always
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   environment:
+  #     - ENVIRONMENT=${ENVIRONMENT}
+  #     - DB_PROD_HOST=${DB_PROD_HOST}
+  #     - DB_PROD_USER=${DB_PROD_USER}
+  #     - DB_PROD_PASSWORD=${DB_PROD_PASSWORD}
+  #     - DB_PROD_DATABASE=${DB_PROD_DATABASE}
+  #     - DB_HOST_HISTORIC=${DB_HOST_HISTORIC}
+  #     - DB_USER_HISTORIC=${DB_USER_HISTORIC}
+  #     - DB_PASSWORD_HISTORIC=${DB_PASSWORD_HISTORIC}
+  #     - DB_DATABASE_HISTORIC=${DB_DATABASE_HISTORIC}
 
   # tetra:
   #   container_name: tetra

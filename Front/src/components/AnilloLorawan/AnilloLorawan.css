@@ -1,0 +1,123 @@
+.lorawan-image-container {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.lorawan-image {
+  width: 100%;
+  height: 100%;
+}
+
+.status-light-lorawan {
+  /* border: black solid 1px; */
+  width: 31px;
+  height: 10px;
+  position: absolute;
+  font-size: 0.55rem;
+  margin-top: 57px;
+  cursor: pointer;
+    display: grid;
+  place-content: center;
+
+}
+
+.main-lights-lorawan-container {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  z-index: 999999;
+  top: 4rem;
+}
+
+/* 10.224.127.180 */
+.id15692 {
+  height: 20px;
+  width: 20px;
+  top: 380px;
+  left: 220px;
+  border-radius: 100%;
+}
+.id15690 {
+  height: 20px;
+  width: 20px;
+  top: 380px;
+  left: 328px;
+  border-radius: 100%;
+}
+.id20716 {
+  height: 20px;
+  width: 20px;
+  top: 410px;
+  left: 610px;
+  border-radius: 100%;
+}
+.id15248 {
+  height: 20px;
+  width: 20px;
+  top: 250px;
+  left: 80px;
+  border-radius: 100%;
+}
+.id5568 {
+  height: 12px;
+  width: 31px;
+  top: 559px;
+  left: 197px;
+}
+.id10966 {
+  height: 12px;
+  width: 41px;
+  top: 564px;
+  left: 351px;
+}
+.id15290 {
+  height: 12px;
+  width: 41px;
+  top: 564px;
+  left: 427px;
+}
+.id12311 {
+  height: 12px;
+  width: 41px;
+  top: 575px;
+  left: 610px;
+}
+.id15256 {
+  height: 20px;
+  width: 20px;
+  top: 637px;
+  left: 200px;
+  border-radius: 100%;
+}
+.id15252 {
+  height: 20px;
+  width: 20px;
+  top: 637px;
+  left: 350px;
+  border-radius: 100%;
+}
+.id15254 {
+  height: 20px;
+  width: 20px;
+  top: 643px;
+  left: 475px;
+  border-radius: 100%;
+}
+.id20894 {
+  height: 20px;
+  width: 20px;
+  top: 645px;
+  left: 655px;
+  border-radius: 100%;
+}
+.id0000 {
+  height: 20px;
+  width: 15px;
+  top: 398px;
+  left: 701px;
+  background-color: white;
+  font-size: 13px;
+}

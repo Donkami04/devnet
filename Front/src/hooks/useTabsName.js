@@ -50,6 +50,8 @@ export const useTabsName = (pathname) => {
       return "Licenciamientos";
     case "/candelaria/monitoreo/dragos":
       return "Dragos";
+    case "/monitoreo/anillo/lorawan":
+      return "Lorawan";
     default:
       return "DevNet";
   }
