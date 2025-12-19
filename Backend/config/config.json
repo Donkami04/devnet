@@ -2,8 +2,8 @@
   "local": {
     "dialect": "mysql",
     "host": "localhost",
-    "username": "devnet",
-    "password": "devnet.0",
+    "username": "camilo",
+    "password": "camilo123",
     "database": "devnet"
   },
   "development": {

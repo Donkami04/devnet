@@ -1,12 +1,16 @@
 version: '3.8'
 
 services:
-
   # mysql:
-  #   image: mysql:latest
+  #   image: mysql:8.0
   #   container_name: database
   #   ports:
   #     - "3306:3306"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root123
+  #     MYSQL_DATABASE: devnet
+  #     MYSQL_USER: camilo
+  #     MYSQL_PASSWORD: camilo123
   #   volumes:
   #     - ./database:/var/lib/mysql
   #   restart: always
@@ -15,14 +19,14 @@ services:
   #   image: phpmyadmin/phpmyadmin:latest
   #   container_name: phpmyadmin
   #   environment:
-  #     PMA_HOST: database
+  #     PMA_HOST: mysql
   #     PMA_USER: camilo
   #     PMA_PASSWORD: camilo123
   #   ports:
   #     - "8080:80"
-  #   restart: always
   #   depends_on:
   #     - mysql
+  #   restart: always
 
   # vpn-forticlient:
   #   container_name: vpn_candelaria

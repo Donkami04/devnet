@@ -2,13 +2,14 @@ const axios = require("axios");
 const https = require("https");
 const { HistoricPrtgDown } = require("../models/historic_prtg_down");
 const { getLocalDateTime } = require("../utils/getLocalDateTime");
+
 require("dotenv").config();
 
 const PRTG_USERNAME = process.env.PRTG_USERNAME;
 const PRTG_PASSWORD = process.env.PRTG_PASSWORD;
 
-// let simulateDown = true;
-// let simulateDown = true;
+// let simulateDown = true; // para simulación de caída
+
 async function checkPrtgAndSaveIfDown() {
     try {
         const prtgUrl =

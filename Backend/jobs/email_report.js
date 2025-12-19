@@ -118,6 +118,7 @@ const sendEmailReport = async () => {
         "oscar.palomino@lundinmining.com",
         "luis.alfaro@lundinmining.com",
         "alvaro.pardo@lundinmining.com",
+        "esteban.quezada@lundinmining.com",
       ],
       subject: "Reporte Devnet Candelaria",
       html: htmlBody,

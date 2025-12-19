@@ -1,6 +1,7 @@
 const cron = require("node-cron");
 const { sendEmailReport } = require("./email_report");
 const { checkPrtgAndSaveIfDown  } = require("./prtg_worker")
+const saveSLAInfraGeneral = require("./save_sla");
 
 console.log("Envio de correo importado correctamente");
 
@@ -16,3 +17,17 @@ cron.schedule("*/10 * * * *", async () => {
   console.log("Ejecutando cronjob para verificar PRTG cada 10 minutos...");
   await checkPrtgAndSaveIfDown();
 });
+
+// Ejecutar cada 5 minutos para guardar SLA de Infraestructura General
+// cron.schedule("*/5 * * * *", async () => {
+//   console.log("Ejecutando cronjob para guardar SLA de Infraestructura General cada 5 minutos...");
+//   await saveSLAInfraGeneral();
+// });
+
+// Ejecutar cada 5 minutos para ver el estado de Actility cada 5 minutos
+// cron.schedule("*/5 * * * *", async () => {
+//   console.log("Ejecutando cronjob para ver el estado de Actility cada 5 minutos...");
+//   await checkStatusActility();
+// });
+
+
