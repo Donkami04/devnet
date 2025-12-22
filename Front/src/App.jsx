@@ -161,7 +161,7 @@ function App() {
 
       <div className="refresh-button-container">
         <span title={"Add Lorawan System"} style={{ marginLeft: "10px" }} className="refresh-button-container-2">
-          Version 2.8.1
+          Version 2.8.2
         </span>
         <div className="pause-and-icons-container">
           <IconsPage />
