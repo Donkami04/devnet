@@ -87,7 +87,6 @@ def update_devnet_data(data):
 
 def register_datetime_sensor_down(data, action):
     try:
-        print(data)
         db_connector = devnet_connection()
         devnet_cursor = db_connector.cursor()
 

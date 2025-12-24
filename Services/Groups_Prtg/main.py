@@ -30,7 +30,6 @@ def main():
         counter = 1
         down_sensors = get_data(table_name="prtg_groups_down_datetimes")
         # print(data_prtg_groups)
-        print(down_sensors)
         # En esta lista almacenamos todos los datos
         final_data = []
 
@@ -42,14 +41,12 @@ def main():
             data = api_request["sensors"]
 
             sensors_id_down = [sensor["id_prtg"] for sensor in down_sensors]
-            print(sensors_id_down)
+
             if data != []:
                 for elem in data:
                     elem["rol"] = group_element["rol"]
                     if "Down" in elem['status']:
-                        print("Esta down")
                         is_first_down = str(elem["objid"]) in sensors_id_down
-                        print(f"is_first_down {is_first_down}")
                         if is_first_down == True:
                             pass
                         else:
@@ -58,7 +55,6 @@ def main():
 
                     if "Up" in elem['status']:
                         is_first_down = str(elem["objid"]) in sensors_id_down
-                        print(f"is_first_down {is_first_down}")
                         if is_first_down == True:
                             elem["datetime"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             register_datetime_sensor_down(elem, "delete")

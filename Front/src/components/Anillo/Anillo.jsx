@@ -443,6 +443,16 @@ export const Anillo = () => {
               </p>
             </div>
             <div className="status-light-anillo-opit-container">
+              <p // 10.224.114.91
+                title={statusTitle(20595)}
+                className={`status-light-anillo id20595 ${statusLight(20595)}`}
+              >
+                <a style={{ color: "black" }} href={`${PRTG_URL}13359&tabid=1`} target="_blank">
+                  Gi1/4
+                </a>
+              </p>
+            </div>
+            <div className="status-light-anillo-opit-container">
               <p // 10.224.114.92
                 title={statusTitle(15628)}
                 className={`status-light-anillo id15628 ${statusLight(15628)}`}
@@ -776,7 +786,7 @@ export const Anillo = () => {
                 </a>
               </p>
             </div>
-            <div className="status-light-anillo-opit-container">
+            {/* <div className="status-light-anillo-opit-container">
               <p // 10.224.114.81
                 title={statusTitle(21032)}
                 className={`status-light-anillo id21032 ${statusLight(21032)}`}
@@ -785,7 +795,7 @@ export const Anillo = () => {
                   Gi1/1
                 </a>
               </p>
-            </div>
+            </div> */}
             <div className="status-light-anillo-opit-container">
               <p // 10.224.114.81
                 title={statusTitle(20590)}
