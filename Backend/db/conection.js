@@ -30,10 +30,24 @@ const sequelizeDB2 = new Sequelize(
   }
 );
 
+// Tercera (Desarrollo) conexión (base de datos 2)
+const dbDesarrollo = config.development;  // Configuración para la tercera base de datos
+const sequelizeDevelopment = new Sequelize(
+  dbDesarrollo.database,
+  dbDesarrollo.username,
+  dbDesarrollo.password,
+  {
+    host: dbDesarrollo.host,
+    dialect: 'mysql',
+    logging: false,
+  }
+);
+
 // Función para verificar ambas conexiones a las bases de datos
 async function checkDatabaseConnections() {
   try {
     await sequelize.authenticate();
+    await sequelizeDevelopment.authenticate();
     console.log(`Conexión a la base de datos del entorno ${environment} exitosa.`);
     
     await sequelizeDB2.authenticate();
@@ -48,5 +62,6 @@ checkDatabaseConnections();
 // Exportar ambas conexiones
 module.exports = {
   sequelize,
-  sequelizeDB2
+  sequelizeDB2,
+  sequelizeDevelopment
 };

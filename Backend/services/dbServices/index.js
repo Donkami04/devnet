@@ -1,4 +1,4 @@
-const { sequelize } = require("../../db/conection");
+const { sequelize, sequelizeDevelopment } = require("../../db/conection");
 const { QueryTypes } = require("sequelize");
 
 class RawSQLService {
@@ -10,6 +10,25 @@ class RawSQLService {
   async select(sql, params = {}) {
     try {
       const rows = await sequelize.query(sql, {
+        replacements: params,
+        type: QueryTypes.SELECT,
+      });
+
+      return rows;
+    } catch (error) {
+      console.error("Error en SELECT:", error);
+      throw new Error("Error ejecutando consulta SELECT");
+    }
+  }
+
+  /**
+   * Ejecuta consultas SELECT en la base de datos de desarrollo
+   * @param {string} sql - Consulta SQL
+   * @param {object} params - Parámetros (replacements)
+   */
+  async selectDevelopment(sql, params = {}) {
+    try {
+      const rows = await sequelizeDevelopment.query(sql, {
         replacements: params,
         type: QueryTypes.SELECT,
       });

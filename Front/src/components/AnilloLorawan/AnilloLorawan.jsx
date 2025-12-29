@@ -97,6 +97,16 @@ export function AnilloLorawan() {
           </div>
 
           <div className="status-light-anillo-container">
+            <a style={{ color: "black" }} href={`${PRTG_URL}15692&tabid=1`} target="_blank">
+              {" "}
+              <p // Actility
+                title={statusTitle(0)}
+                className={`status-light-lorawan id0 ${statusLight(0)}`}
+              ></p>
+            </a>
+          </div>
+
+          <div className="status-light-anillo-container">
             <a style={{ color: "black" }} href={`${PRTG_URL}15690&tabid=1`} target="_blank">
               <p // Fw IT Conc
                 title={statusTitle(15690)}
