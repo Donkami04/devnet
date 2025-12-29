@@ -1,31 +1,31 @@
 const { DataTypes } = require("sequelize");
-const { sequelize } = require("../db/conection");
+const { sequelizeDB2 } = require("../db/conection");
 
-const SlaHistorico = sequelize.define(
-  "SlaHistorico",
+const SystemIndicator = sequelizeDB2.define(
+  "SystemIndicator",
   {
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       primaryKey: true,
       autoIncrement: true,
     },
-    system: {
+    system_name: {
       type: DataTypes.STRING(100),
       allowNull: false,
     },
-    sla: {
+    indicator_value: {
       type: DataTypes.DECIMAL(5, 2),
       allowNull: false,
     },
-    datetime: {
+    recorded_at: {
       type: DataTypes.DATE,
       allowNull: false,
     },
   },
   {
-    tableName: "sla_historicos",
+    tableName: "system_indicators",
     timestamps: false,
   }
 );
 
-module.exports = {SlaHistorico};
+module.exports = { SystemIndicator };

@@ -27,6 +27,7 @@ const sequelizeDB2 = new Sequelize(
     host: dbHistoric.host,
     dialect: 'mysql',
     logging: false,
+    timezone: "America/Santiago",
   }
 );
 

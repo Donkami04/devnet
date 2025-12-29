@@ -1,6 +1,7 @@
 const { DataInfGenService } = require("../controllers/inf_gen");
 const InfraGeneral = new DataInfGenService();
-const { SlaHistorico } = require("../models/sla_historicos");
+const { SystemIndicator } = require("../models/sla_historicos");
+const { getLocalDateTime } = require("../utils/getLocalDateTime");
 
 const saveSLAInfraGeneral = async () => {
   try {
@@ -20,12 +21,15 @@ const saveSLAInfraGeneral = async () => {
 
     // 3. Asegurar máximo dos decimales
     slaValue = Number(slaValue.toFixed(2));
-
+    const dateNow = getLocalDateTime();
+    console.log(dateNow);
+    // const recorded_at = new Date(dateNow.replace(" ", "T"));
+    // console.log("Fecha y hora registrada para el SLA:", recorded_at);
     // 4. Guardar en base de datos
-    await SlaHistorico.create({
-      system: "Infraestructura General",
-      sla: slaValue,
-      datetime: new Date(),
+    await SystemIndicator.create({
+      system_name: "Infraestructura General",
+      indicator_value: slaValue,
+      recorded_at: dateNow,
     });
 
     console.log(
@@ -40,4 +44,4 @@ const saveSLAInfraGeneral = async () => {
   }
 };
 
-module.exports = saveSLAInfraGeneral;
+module.exports = {saveSLAInfraGeneral};

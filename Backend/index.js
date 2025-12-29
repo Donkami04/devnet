@@ -5,8 +5,7 @@ const port = process.env.NODE_PORT;
 const cors = require("cors");
 const { allRoutes } = require("./routes/index.routes");
 require("./jobs/index");
-const { checkStatusActility } = require("./jobs/health_check_actility");
-checkStatusActility()
+
 const {
   logErrors,
   errorHandler,
